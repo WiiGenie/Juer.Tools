@@ -15,8 +15,8 @@ namespace TestProject
         {
             //对于INIManager的示例
             INIManager ini = new INIManager("./config.cfg");
-            ini["Hello"]["World"] = "!";
-            Debug.WriteLine(ini["Hello"]["World"]);
+            ini["Hello"]["World"] = "233";
+            Debug.WriteLine(ini["Hello"].GetValue<int>("World") - 1);
         }
     }
 }
